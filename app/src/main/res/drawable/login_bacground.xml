@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background gradient -->
+    <item>
+        <shape>
+            <gradient
+                android:type="linear"
+                android:angle="45"
+                android:startColor="#0068BD"
+                android:endColor="#ECECEC"/>
+        </shape>
+    </item>
+    <!-- Semi-transparent overlay for texture effect -->
+    <item>
+        <shape>
+            <solid android:color="#80870000"/> <!-- 50% opacity white -->
+        </shape>
+    </item>
+    <!-- Rectangular shapes for added interest -->
+    <item>
+        <shape android:shape="rectangle">
+            <size android:width="200dp" android:height="200dp"/>
+            <solid android:color="#66130727"/> <!-- 40% opacity -->
+            <stroke android:width="2dp" android:color="#577995"/>
+        </shape>
+        <rotate android:fromDegrees="45"/>
+        <translate android:fromXDelta="10%" android:fromYDelta="10%" android:toXDelta="30%" android:toYDelta="30%"/>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <size android:width="150dp" android:height="150dp"/>
+            <solid android:color="#ECEFEC"/> <!-- 40% opacity -->
+            <stroke android:width="2dp" android:color="#0082ED"/>
+        </shape>
+        <rotate android:fromDegrees="15"/>
+        <translate android:fromXDelta="60%" android:fromYDelta="60%" android:toXDelta="80%" android:toYDelta="80%"/>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <size android:width="100dp" android:height="100dp"/>
+            <solid android:color="#66CFC7DD"/> <!-- 40% opacity -->
+            <stroke android:width="2dp" android:color="#0073D1"/>
+        </shape>
+        <rotate android:fromDegrees="75"/>
+        <translate android:fromXDelta="30%" android:fromYDelta="30%" android:toXDelta="50%" android:toYDelta="50%"/>
+    </item>
+</layer-list>
